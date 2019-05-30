@@ -1,0 +1,193 @@
+$theme-colors: (
+    "light": #f8c92e00,
+    "nav-link": #fff,
+    "active ": #ffdc6b
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+h2,h4,h5 {
+    color: #01ebeb;
+}
+
+header {
+    background-image: url('../images/header.png');
+    background-size: cover;
+    height: 100vh;
+    .navbar-light .navbar-nav {
+        .active > .nav-link {
+            color: #ffdc6b;
+        }
+        .nav-link {
+            color: #fff;
+        }
+    }
+
+    h1,input {
+        color: #fff;
+    }
+    .search-box {
+        padding: 50px;
+        background-color: #22ccc16e;
+
+        form {
+            .inputWithIcon {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: 15px;
+                    top: 3px;
+                    padding: 9px 0;
+                }
+                input {
+                    border: 1px solid #fff;
+                    background-color: transparent;
+                    height: 40px;
+                    color: #fff;
+                    padding-left: 40px;
+                    
+                    &::placeholder {
+                        color: #fff;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            button {
+                background-color: #016cdc;
+                border: none;
+                color: #fff;
+                padding: 5px;
+                &:hover {
+                    background-color: #4794e6;
+                }
+            }
+            
+        }
+    }
+}
+main {
+    .inputWithIcon {
+        position: relative;
+        border-bottom: 1px solid #01ebeb;
+        img {
+            position: absolute;
+            left: 15px;
+            top: 3px;
+            padding: 9px 0;
+
+        }
+        input {
+            border: 1px solid #fff;
+            background-color: transparent;
+            height: 40px;
+            color: #01ebeb;
+            font-weight: 600;
+            padding-left: 40px;
+        }
+    }
+    .sellers {
+        background-color: #016cdc;
+        overflow: hidden;
+        .sellers-item {
+            background-size: cover;
+            color: #fff;
+            height: 400px;
+            margin: 20px 10px;
+            .inputWithIcon {
+                position: relative;
+                border: none;
+                img {
+                    position: absolute;
+                    left: 15px;
+                    top: 3px;
+                    padding: 9px 0;
+                    border-left: 1px solid #fff;
+                }
+            }
+            button {
+                background-color: #ffffff57;
+                border: none;
+                padding: 5px;
+                color: #fff;
+            }
+        }
+        #first {
+            background-image: url('../images/first-seller.png');
+        }
+        #second {
+            background-image: url('../images/second-seller.png');
+        }
+        #third {
+            background-image: url('../images/third-seller.png');
+        }
+        #fourth {
+            background-image: url('../images/first-seller.png');
+        }
+    }
+    .tour {
+        max-width: 100%;
+        img {
+            width: 100%;
+        }
+        button {
+            background-color: #016cdc;
+            border: none;
+            color: #fff;
+            padding: 8px 15px;
+        }
+    }
+    .details {
+        width: 100%;
+        .details-item {
+            height: 600px;
+            h3 {
+                color: #fff;
+            }
+            button {
+                width: 70px;
+                padding: 20px 0;
+                background-color: #ffffff04;
+                color: #fff;
+                border-radius: 40px;
+                border-color: #fff;
+                font-weight: 500;
+                &:hover {
+                    background-color: #ffffff7c;
+                }
+            }
+        }
+    }
+    #details-first {
+        background-image: url('../images/cruises.png');
+        background-size: cover;
+    }
+    #details-second {
+        background-image: url('../images/inclive.png');
+        background-size: cover;
+    }
+    #details-third {
+        background-image: url('../images/camping.png');
+        background-size: cover;
+    }
+    .hot-tours {
+        p {
+            color: #01ebeb;
+        }
+    }
+}
+.footer {
+    height: 500px;
+    background-image: url('../images/footer-image.png');
+    background-size: cover;
+    .footer-text {
+        p {
+            color: #fff;
+        }
+        button {
+            background-color: #01ebeb;
+            border: none;
+            color: #fff;
+            padding: 8px 15px;
+        }
+    }
+}
